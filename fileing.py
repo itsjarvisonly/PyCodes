@@ -1,0 +1,1 @@
+stuff = open('Numberguess.py' , 'r')
