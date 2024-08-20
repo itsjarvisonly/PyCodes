@@ -11,5 +11,10 @@ for line in handle:
         lis.append(name)
 for k in lis:
     dic[k] = dic.get(k , 0) + 1
-    print(k)
-    
+large = None
+largename = None
+for key,values in dic.items():
+    if large is None or int(values) >= int(large):
+        largename = key
+        large = values
+print(largename , large)
