@@ -2,7 +2,7 @@
 #  of any student(s) having the second lowest grade.
 #  Note: If there are multiple students with the second lowest grade, order their names alphabetically 
 #  and print each name on a new line.
-
+#clear up
 dic1 = {}
 dicr = {}
 tmp = []
