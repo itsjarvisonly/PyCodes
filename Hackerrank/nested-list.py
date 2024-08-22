@@ -3,20 +3,18 @@
 #  Note: If there are multiple students with the second lowest grade, order their names alphabetically 
 #  and print each name on a new line.
 #clear up
-dic1 = {}
-dicr = {}
+dic1 =  {}
 tmp = []
-lis = []
-k = None
+dicr= {}
 for _ in range(int(input())):
-    name = input()
-    score = float(input())
-    dic1[name] = score
-for n,s in dic1.items():
-    tmp.append((s,n))
-for s,t in sorted(tmp, reverse=True):
-    if k is None:
-        k = float(s)
-    if s not in lis:
-        lis.append(s)
-for  
+  name = input()
+  score = float(input())
+  dic1[name] = score
+for a , b in dic1.items():
+  dicr[b] = a
+for s , n in sorted(dicr.items()):
+  tmp.append(s)
+tmp = list(set(tmp))
+for x , y in dicr.items():
+  if x == tmp[1]:
+    print(dicr[x])
