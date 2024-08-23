@@ -1,3 +1,5 @@
+"""This program makes all the comination of co-ordinates up to x,y,z from 0,0,0  
+given x,y and z """
 x = int(input())
 y = int(input())
 z = int(input())
