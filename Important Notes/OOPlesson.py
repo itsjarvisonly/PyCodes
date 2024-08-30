@@ -22,3 +22,6 @@ print("Age of sarla is:" ,sarla.age)
 dat = [1 , 2 , 3 , 4 ,99 ,1000, 5000]
 for x in dat:
   print("answer is",int(x) * 2)
+print("coding keyboard in connected")
+
+
