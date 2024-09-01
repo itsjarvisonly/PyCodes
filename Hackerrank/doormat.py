@@ -1,10 +1,15 @@
 n , m = list(map(int,input().split()))
-k = m
-d = n
-for l in range(1,(n-1)//2+1):
-  print(" it is ",l)
-  print("-"*((m-3)//2)+".|."*(2*l-1)+"-"*((m-3)//2))
-print(("-"*((k-7//2)))+"WELCOME"+"-"*((k-7)//2))
+h = n
+w = m
+hyp = (w-3)//2
+for l in range((n-1)//2):
+  print("-"*hyp+(".|."*l+".|."+".|."*l)+"-"*hyp)
+  hyp = hyp - 3
+hyp +=3
+print("-"*((w-7)//2)+"WELCOME"+"-"*((w-7)//2))
+for k in range((n-1)//2-1 , -1,-1):
+  print("-"*hyp+(".|."*k+".|."+".|."*k)+"-"*hyp)
+  hyp = hyp + 3
 # needed output
 # ------------.|.------------
 # ---------.|..|..|.---------
