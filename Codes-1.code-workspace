@@ -6,6 +6,16 @@
 		}
 	],
 	"settings": {
-		"workbench.editor.defaultBinaryEditor": "default"
+		"workbench.editor.defaultBinaryEditor": "default",
+		"editor.quickSuggestions": {
+			"other": "off"
+		},
+		"editor.snippetSuggestions": "none",
+		"terminal.integrated.suggest.quickSuggestions": {
+			
+			"commands": "on",
+			"arguments": "on",
+			"unknown": "off"
+		}
 	}
 }
