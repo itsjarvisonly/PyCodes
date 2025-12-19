@@ -10,3 +10,4 @@ for s in range(1,k+1):
     # print(ans)
     for i in ans:
         print("".join(i))
+        
