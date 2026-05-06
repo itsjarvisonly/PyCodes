@@ -3,7 +3,7 @@ def check_answer(user_input, correct_answer):
     Checks if the user's answer matches the correct answer.
     Returns 1 for correct, 0 for incorrect.
     """
-    # .upper() ensures that 'a' and 'A' are treated the same
+    
     if user_input.upper() == correct_answer:
         print("Correct! ✅\n")
         return 1
@@ -12,15 +12,11 @@ def check_answer(user_input, correct_answer):
         return 0
 
 def run_quiz():
-    """
-    Main function to run the quiz application.
-    """
+
     print("--- Python Mini Project Quiz ---")
     print("Type the letter of your answer and press Enter.\n")
-    
-    # Data structure: A simple list of lists.
-    # Format: [ "Question text", "Options separated by \n", "Answer" ]
-    quiz_data = [
+
+    questions = [
         [
             "1. How can you create a string variable in Python?",
             "A. Enclosing characters in square brackets, like [Hello]\nB. Enclosing characters in quotes, like \"Hello\"\nC. Enclosing characters in parentheses, like (Hello)\nD. Enclosing characters in curly braces, like {Hello}",
@@ -75,25 +71,20 @@ def run_quiz():
     
     score = 0
     
-    # Loop through our list of questions
-    for item in quiz_data:
-        question_text = item[0]
-        options_text = item[1]
+    for item in questions:
+        question = item[0]
+        options = item[1]
         correct_answer = item[2]
         
-        # Display to the user
-        print(question_text)
-        print(options_text)
+        print(question)
+        print(options)
         
-        # Take input
         user_choice = input("Enter your choice (A/B/C/D): ")
-        
-        # Call our check_answer function and add the result to the score
+
         score += check_answer(user_choice, correct_answer)
 
-    # Final result
     print("==============================")
-    print("Quiz Over! Your final score is:", score, "out of", len(quiz_data))
+    print("Quiz Over! Your final score is:", score, "out of", len(questions))
 
-# Start the program
+
 run_quiz()
